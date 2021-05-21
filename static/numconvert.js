@@ -48,4 +48,3 @@ window.onload = function () {
 	base10.value = 10;
 	numberOnInput(base10);
 }
-document.addEventListener('contextmenu', event => event.preventDefault());
