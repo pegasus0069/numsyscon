@@ -48,3 +48,10 @@ window.onload = function () {
 	base10.value = 10;
 	numberOnInput(base10);
 }
+function disableclick(event){
+	if(event.button==2 || event.button==3){ // this value is 3 for some othe browser
+	 // Rest of code
+  return false;
+}
+}
+document.body.onclick = disableclick()
