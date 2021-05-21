@@ -2,10 +2,10 @@
   "name": "number-system-converter",
   "version": "1.0.0",
   "description": "Converts numbers to any form.",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"No test specified\"",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
