@@ -1,0 +1,30 @@
+{
+  "name": "number-system-converter",
+  "version": "1.0.0",
+  "description": "Converts numbers to any form.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pegasus0069/numsyscon.git"
+  },
+  "keywords": [
+    "number",
+    "converter",
+    "decimal",
+    "binary",
+    "converter"
+  ],
+  "author": "Noor-E Sadman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pegasus0069/numsyscon/issues"
+  },
+  "homepage": "https://github.com/pegasus0069/numsyscon#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

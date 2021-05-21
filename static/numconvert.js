@@ -1,8 +1,9 @@
 var range = {
-    2  : /^([-+]?)([01]*)(\.[01]*)?$/, //For Binary
-    8  : /^([-+]?)([0-7]*)(\.[0-7]*)?$/, //For Octal
-    10 : /^([-+]?)(\d*)(\.\d*)?$/, //For Decimal
-    16 : /^([-+]?)([0-9a-f]*)(\.[0-9a-f]*)?$/i }; //For Hexadecimal
+	2: /^([-+]?)([01]*)(\.[01]*)?$/, //For Binary
+	8: /^([-+]?)([0-7]*)(\.[0-7]*)?$/, //For Octal
+	10: /^([-+]?)(\d*)(\.\d*)?$/, //For Decimal
+	16: /^([-+]?)([0-9a-f]*)(\.[0-9a-f]*)?$/i //For Hexadecimal
+};
 
 function numberOnInput(input) {
 	var base = parseInt(input.name.substr(4));
@@ -12,16 +13,15 @@ function numberOnInput(input) {
 		s = s.substr(2);
 	}
 	s = s.replace(/^ +| +$/g, '');
-
 	var n;
 	var matches = s.match(range[base]);
 	if (!matches) {
-	    n = NaN;
+		n = NaN;
 	} else {
 		n = parseInt(matches[1] + '0' + matches[2], base);
-	  if (matches[3] && matches[3].length >= 2) {
-		  n += (matches[1] == '-' ? -1 : +1) * parseInt(matches[3].substr(1), base) / Math.pow(base, matches[3].length - 1);
-    }
+		if (matches[3] && matches[3].length >= 2) {
+			n += (matches[1] == '-' ? -1 : +1) * parseInt(matches[3].substr(1), base) / Math.pow(base, matches[3].length - 1);
+		}
 	}
 	// Check for invalid characters!
 	var bases = [2, 8, 10, 16];
@@ -40,11 +40,10 @@ function numberOnInput(input) {
 				}
 			}
 			document.getElementById('base' + bases[i]).value = output.toUpperCase();
-        }
+		}
 	}
 }
-
-window.onload = function() {
+window.onload = function () {
 	var base10 = document.getElementById('base10');
 	base10.value = 10;
 	numberOnInput(base10);
