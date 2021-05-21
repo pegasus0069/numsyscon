@@ -16,7 +16,7 @@ app.get('/', function (request, response) {
 	//console.log(request)
 	response.sendFile(__dirname + '/index.html')
 })
-server.listen(process.env.PORT || 3000, process.env.IP || 'localhost', function () {
+server.listen(process.env.PORT, process.env.IP, function () {
 	console.log('Server Running');
 })
 module.exports = {
