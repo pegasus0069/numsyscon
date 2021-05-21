@@ -34,6 +34,6 @@ jobs:
       with:
         app-name: letsconvert
         slot-name: Production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_68B86B4FEE554EFFA47FC29F91084C7B }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8F9FF2C5A2F143BB8415F152B78913F2 }}
         package: .
 
