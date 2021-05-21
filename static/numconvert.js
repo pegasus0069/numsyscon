@@ -47,11 +47,5 @@ window.onload = function () {
 	var base10 = document.getElementById('base10');
 	base10.value = 10;
 	numberOnInput(base10);
+	document.addEventListener('contextmenu', event => event.preventDefault());
 }
-function disableclick(event){
-	if(event.button==2 || event.button==3){ // this value is 3 for some othe browser
-	 // Rest of code
-  return false;
-}
-}
-document.body.onclick = disableclick()
