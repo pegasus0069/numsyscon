@@ -47,5 +47,5 @@ window.onload = function () {
 	var base10 = document.getElementById('base10');
 	base10.value = 10;
 	numberOnInput(base10);
-	document.addEventListener('contextmenu', event => event.preventDefault());
 }
+document.addEventListener('contextmenu', event => event.preventDefault());
