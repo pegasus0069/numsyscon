@@ -1,8 +1,0 @@
-{
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ],
-    "appService.deploySubpath": ".",
-    "appService.defaultWebAppToDeploy": "/subscriptions/ecca740e-6271-4ded-bfd1-b1f5d850e244/resourceGroups/Test/providers/Microsoft.Web/sites/letsconvert"
-}
